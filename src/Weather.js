@@ -21,8 +21,12 @@ export default function Weather() {
             </ul>
             <div className="row">
                 <div className="col-6">
-                <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="Rainy"/>
-                17C
+                    <div className="clearfix">
+                <img src="http://openweathermap.org/img/wn/09d@2x.png" 
+                alt="Rainy"/>
+                <span className="temperature">17</span>
+                <span className="unit">°C</span>
+                </div>
                 </div>
                 <div className="col-6">
                     <ul>
