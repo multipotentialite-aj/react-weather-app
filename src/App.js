@@ -8,7 +8,7 @@ export default function App() {
 
     <Weather />
 
-    <footer><a href="https://github.com/multipotentialite-aj/react-weather-app" target="_blank">Coded by AJ on GitHub</a></footer>
+    <footer><a href="https://github.com/multipotentialite-aj/react-weather-app" target="_blank" rel="noreferrer">Coded by AJ on GitHub</a></footer>
   </div>
   </div>
 }
