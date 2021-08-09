@@ -8,7 +8,7 @@ export default function App() {
 
     <Weather defaultCity="Toronto" />
 
-    <footer><a href="https://github.com/multipotentialite-aj/react-weather-app" target="_blank" rel="noreferrer">Coded by AJ on GitHub</a></footer>
+    <footer className="mb-3"><a href="https://github.com/multipotentialite-aj/react-weather-app" target="_blank" rel="noreferrer">Coded by AJ on GitHub</a></footer>
   </div>
   </div>
 }

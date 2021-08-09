@@ -1,7 +1,8 @@
 .Weather {
-    border: 1px solid blue;
     padding: 16px;
     border-radius: 4px;
+    background-color: #fff;
+    opacity: 70%;
 }
 .Weather form {
     margin-bottom: 20px;
