@@ -6,7 +6,7 @@ export default function App() {
   return <div className="App">
     <div className="container">
 
-    <Weather />
+    <Weather defaultCity="Toronto" />
 
     <footer><a href="https://github.com/multipotentialite-aj/react-weather-app" target="_blank" rel="noreferrer">Coded by AJ on GitHub</a></footer>
   </div>
