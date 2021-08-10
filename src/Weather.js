@@ -32,7 +32,7 @@ export default function Weather(props) {
                     </div>
                     </div>
                 </form>
-                <h1 className="mb-1">{weatherData.city}</h1>
+                <h1 className="mb-2">{weatherData.city}</h1>
                 <ul>
                     <li>
                         <FormattedDate date={weatherData.date} />

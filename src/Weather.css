@@ -2,8 +2,7 @@
     padding: 16px;
     border-radius: 4px;
     border: 1px solid white;
-    background: #fff;
-    opacity: 60%;
+    background: rgba(204, 204, 204, 0.2);
 }
 .Weather form {
     margin-bottom: 20px;

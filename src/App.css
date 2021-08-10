@@ -10,7 +10,7 @@
   text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 body {
-  font-family: 'PT Mono', monospace;
+  font-family: 'Courier Prime', monospace;
 }
