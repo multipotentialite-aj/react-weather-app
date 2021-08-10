@@ -45,15 +45,17 @@ export default function Weather(props) {
                     <div className="col-6">
                         <div className="clearfix">
                             <div className="float-left">
-                            <WeatherIcon code={props.data.icon} size={52} />        
+                            <WeatherIcon code={weatherData.icon} size={52} />
+                                    
                     <span className="temperature">{Math.round(weatherData.temperature)}</span>
                     <span className="unit">°C</span>
                     </div>
                     </div>
+                    
                     <div className="col-6">
                         <ul>
-                            <li>Humidity: {weatherData.humidity} %</li>
-                            <li>Wind: {weatherData.wind} km/h</li>
+                            <li>Humidity: {weatherData.humidity}%</li>
+                            <li>Wind: {weatherData.wind}km/h</li>
                         </ul>
                     </div>
                     </div>
