@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate"
+import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 import axios from "axios";
 import "./Weather.css";
 
@@ -7,17 +8,18 @@ export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
     
     function handleResponse(response) {
-        console.log(response.data);
         setWeatherData({
-            ready: true,
-            temperature: response.data.main.temp,
-            humidity: response.data.main.humidity,
-            description: response.data.weather[0].description,
-            wind: response.data.wind.speed,
-            city: response.data.name,
-            date: new Date(response.data.dt * 1000)
+          ready: true,
+          coordinates: response.data.coord,
+          temperature: response.data.main.temp,
+          humidity: response.data.main.humidity,
+          date: new Date(response.data.dt * 1000),
+          description: response.data.weather[0].description,
+          icon: response.data.weather[0].icon,
+          wind: response.data.wind.speed,
+          city: response.data.name,
         });
-    }
+      }
 
     if (weatherData.ready) {
         return (
@@ -42,8 +44,8 @@ export default function Weather(props) {
                 <div className="row">
                     <div className="col-6">
                         <div className="clearfix">
-                    <img src="http://openweathermap.org/img/wn/09d@2x.png" 
-                    alt="Rainy"/>
+                            <div className="float-left">
+                            <WeatherIcon code={props.data.icon} size={52} />        
                     <span className="temperature">{Math.round(weatherData.temperature)}</span>
                     <span className="unit">°C</span>
                     </div>
@@ -53,6 +55,7 @@ export default function Weather(props) {
                             <li>Humidity: {weatherData.humidity} %</li>
                             <li>Wind: {weatherData.wind} km/h</li>
                         </ul>
+                    </div>
                     </div>
             </div>
             </div>
