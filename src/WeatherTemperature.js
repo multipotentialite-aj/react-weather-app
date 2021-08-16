@@ -12,8 +12,6 @@ export default function WeatherTemperature(props) {
     setUnit("celcius");
   }
 
-  function fahrenheit
-
   if (unit === "celcius") {
   return (
     <div className="WeatherTemperature">
