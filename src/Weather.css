@@ -9,12 +9,11 @@
 }
 .Weather h1 {
     display: block;
-    font-weight: bolder;
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 600;
     margin: 20px 0 0 0;
     line-height: 29px;
-    letter-spacing: 1px;
+    color: blue;
 }
 .Weather ul {
     margin: 0;
@@ -38,7 +37,7 @@
     top: -9px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap');
 .Weather h1 {
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
