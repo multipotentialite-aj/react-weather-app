@@ -56,7 +56,7 @@ export default function Weather(props) {
             <div className="clearfix">
               <div className="float-left pt-2">
                 <WeatherIcon code={weatherData.icon} size={52} />
-                <WeatherTemperature celcius={props.data.temperature} />
+                <WeatherTemperature celcius={weatherData.temperature} />
               </div>
             </div>
           </div>
